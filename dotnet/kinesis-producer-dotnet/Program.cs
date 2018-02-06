@@ -44,7 +44,7 @@ namespace KinesisProducerDotNet
       putResult.Wait();
       Console.Error.WriteLine(
           String.Format("Successfully putrecord in partition key = {0,15}, shard ID = {1}",
-              putResult.Id, requestRecord.PartitionKey, putResult.Result.ShardId));
+              requestRecord.PartitionKey, putResult.Result.ShardId));
     }
     public static string getKey(SqlDataReader reader)
     {
